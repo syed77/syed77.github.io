@@ -684,7 +684,7 @@ Data Analysis • Information Systems • Research & Analytics • Problem Solvi
       <div class="row">
         
 
-        <div class="col-md-4 text-center d-flex ftco-animate">
+        <div class="col-md-6 text-center d-flex ftco-animate">
           <a class="services-1 shadow" onclick="showCertificate('#modal-2')">
             <span class="icon">
               <i class="flaticon-flasks"></i>
@@ -700,7 +700,7 @@ Data Analysis • Information Systems • Research & Analytics • Problem Solvi
         </div>
 
 
-        <div class="col-md-4 text-center d-flex ftco-animate">
+        <div class="col-md-6 text-center d-flex ftco-animate" style="width: 850px">
           <a class="services-1 shadow" onclick="showCertificate('#modal-1')">
             <span class="icon">
               <i class="icon-internet-explorer"></i>
@@ -744,9 +744,11 @@ Data Analysis • Information Systems • Research & Analytics • Problem Solvi
             </div>
           </a>
         </div> -->
-        <div class="col-md-4 text-center d-flex ftco-animate">
-          <a href="#" class="services-1 shadow">
-            <span class="icon">
+        
+
+        <div class="col-md-6 text-center d-flex ftco-animate">
+          <a class="services-1 shadow" onclick="showCertificate('#modal-4')">
+          <span class="icon">
               <i class="flaticon-ux-design"></i>
             </span>
             <div class="desc">
@@ -757,8 +759,9 @@ Data Analysis • Information Systems • Research & Analytics • Problem Solvi
             </div>
           </a>
         </div>
-        <div class="col-md-4 text-center d-flex ftco-animate">
-          <a href="#" class="services-1 shadow">
+
+        <div class="col-md-6 text-center d-flex ftco-animate">
+          <a class="services-1 shadow" onclick="showCertificate('#modal-3')">
             <span class="icon">
               <img height="60px" width="60px" src="/fonts/big-data.svg"> </img>
               <!-- <i class="flaticon-idea"></i> -->
@@ -772,6 +775,7 @@ Data Analysis • Information Systems • Research & Analytics • Problem Solvi
             </div>
           </a>
         </div>
+
       </div>
     </div>
   </section>
@@ -1241,13 +1245,18 @@ Data Analysis • Information Systems • Research & Analytics • Problem Solvi
     </div>
   </footer>
 
+
+
   <app-modal modalId="modal-1" heading="App Development"
-    images="Oracle Database 19c PLSQL.jpg, Intro to Spark SQL and DF.jpg"></app-modal>
-  <app-modal modalId="modal-2" heading="DevOps" images="work-1.jpg, work-2.jpg, work-3.jpg"></app-modal>
-  <app-modal modalId="modal-3" heading="Programming Languages"
-    images="work-1.jpg, work-2.jpg, work-3.jpg, work-4.jpg"></app-modal>
-  <app-modal modalId="modal-4" heading="Modal 4"
-    images="work-1.jpg, work-2.jpg, work-3.jpg, work-4.jpg, work-5.jpg"></app-modal>
+  folder ="images/App-Dev"
+ 
+  images="App-img1.png , App-img2.png , App-img3.png , App-img4.png , App-img5.png">
+  </app-modal>
+  <app-modal modalId="modal-2" heading="DevOps" images="devops-img1.png , devops-img2.png , devops-img3.png , devops-img4.png"></app-modal>
+  <app-modal modalId="modal-3" heading="big-data"
+    images="Bigdata-img1.png , Bigdata-img2.png , Bigdata-img3.png "></app-modal>
+  <app-modal modalId="modal-4" heading="Cloud-Computing"
+    images="Cloud-img1.png"></app-modal>
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen">
