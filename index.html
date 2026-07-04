@@ -32,6 +32,9 @@
     .skill-category { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #999; margin-bottom: 0.6rem; }
     .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
     .skill-tag { display: inline-block; padding: 4px 12px; border-radius: 20px; background: #f4f4f4; color: #444; font-size: 0.82rem; font-weight: 500; }
+    .proof-strip { display: flex; gap: 6px; flex-wrap: wrap; border-top: 1px solid rgba(0,0,0,0.07); padding-top: 10px; margin-top: 14px; }
+    .proof-thumb { width: 72px; height: 52px; object-fit: cover; border-radius: 4px; cursor: pointer; border: 1.5px solid rgba(0,0,0,0.09); opacity: 0.82; transition: opacity 0.15s ease, transform 0.15s ease; }
+    .proof-thumb:hover { opacity: 1; transform: scale(1.06); }
   </style>
 </head>
 
@@ -231,6 +234,11 @@
                   <li>Enabled custom access reporting dashboards (VPN Usage, Admin Locked Accounts) providing stakeholders with actionable insights into security posture and user behavior.</li>
                   <li>Onboarded Citi Bank vendor applications, Tabnine AI tooling, and HashiCorp Vault integrations &mdash; automating provisioning flows end-to-end via LDAP, RACF, and JDBC connectors.</li>
                 </ul>
+                <div class="proof-strip">
+                  <img src="images/proof/dillards-password all.png" class="proof-thumb" onclick="showCertificate('#modal-proof-dillards')" alt="Password Resets (all systems)">
+                  <img src="images/proof/dillards-password-all.png" class="proof-thumb" onclick="showCertificate('#modal-proof-dillards')" alt="Password Resets Self Service">
+                  <img src="images/proof/dillards-password reset other.png" class="proof-thumb" onclick="showCertificate('#modal-proof-dillards')" alt="Password Reset OTHER breakdown">
+                </div>
               </div>
             </div>
 
@@ -253,6 +261,9 @@
                   <li>Automated RBAC provisioning for a highly available MongoDB cluster with sharding and auto-failover (PSA); monitored via Prometheus and Grafana.</li>
                   <li>Improved query performance by <strong>30%</strong> migrating 10M+ data points from MySQL to MongoDB with optimized indexing.</li>
                 </ul>
+                <div class="proof-strip">
+                  <img src="images/proof/ualr-dataflow.png" class="proof-thumb" onclick="showCertificate('#modal-proof-ualr')" alt="DARPA/ONR system architecture">
+                </div>
               </div>
             </div>
 
@@ -271,6 +282,11 @@
                   <li>Built scalable real-time pipelines analyzing JSON, CSV, Parquet, PSV, XML across AWS S3, EMR, Lambda and Talend; mapped business metrics to SLA/SLO/SLI thresholds.</li>
                   <li>Recognized with the <strong>'Brillian of the Month'</strong> award for exemplary initiative across multiple POCs.</li>
                 </ul>
+                <div class="proof-strip">
+                  <img src="images/proof/mcd-architecture.png" class="proof-thumb" onclick="showCertificate('#modal-proof-mcd')" alt="McDonald's ELK architecture">
+                  <img src="images/proof/mcd-dashboard.png" class="proof-thumb" onclick="showCertificate('#modal-proof-mcd')" alt="Grafana POC dashboards">
+                  <img src="images/proof/mcd-attrs.png" class="proof-thumb" onclick="showCertificate('#modal-proof-mcd')" alt="Common data model &amp; attributes">
+                </div>
               </div>
             </div>
 
@@ -1135,6 +1151,9 @@
     images="Bigdata-img1.png , Bigdata-img2.png , Bigdata-img3.png "></app-modal>
   <app-modal modalId="modal-4" heading="Cloud-Computing"
     images="Cloud-img1.png"></app-modal>
+  <app-modal modalId="modal-proof-dillards" heading="Dillard's — Password Reset Analytics" images="proof/dillards-password all.png , proof/dillards-password-all.png , proof/dillards-password reset other.png"></app-modal>
+  <app-modal modalId="modal-proof-ualr" heading="UALR — DARPA/ONR System Architecture" images="proof/ualr-dataflow.png"></app-modal>
+  <app-modal modalId="modal-proof-mcd" heading="McDonald's — Observability Platform" images="proof/mcd-architecture.png , proof/mcd-dashboard.png , proof/mcd-attrs.png"></app-modal>
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen">
